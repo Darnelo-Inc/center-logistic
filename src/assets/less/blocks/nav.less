@@ -1,0 +1,42 @@
+//main: ../style.less
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__link {
+    position: relative;
+    
+    font-family: @Lato;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: @white;
+    text-decoration: none;
+    
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -.3rem;
+        left: 40%;
+        z-index: 10;
+        
+        display: block;
+        width: 20%;
+        height: .17rem;
+        
+        background-color: @white;
+        opacity: 0;
+        
+        transition: width .2s ease-in-out, transform .2s ease-in-out, opacity .2s ease-in-out;
+    }
+    
+    &:hover {
+        &:after {
+            opacity: 1;
+            
+            transform: scaleX(5);
+        }
+    } 
+}
