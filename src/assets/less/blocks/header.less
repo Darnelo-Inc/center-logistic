@@ -1,11 +1,18 @@
 //main: ../style.less
 
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
     display: flex;
     align-items: center;
-    height: 8.5rem;
+    height: @header-height;
+    width: 100%;
     
     background-color: rgba(@black, .2);
+    box-shadow: 0 4px 4px rgba(@black, .25);
 }
 
 .header__inner {
