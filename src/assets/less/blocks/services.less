@@ -1,0 +1,93 @@
+//main: ../style.less
+
+.services {
+    margin-top: 9rem;
+}
+
+.services__inner {
+    position: relative;
+
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    padding: 2.8rem 5rem 8.4rem;
+    
+    box-shadow: 0 4px 4px rgba(@black, .25);
+}
+
+.services__item {
+    width: 25%;
+    max-width: 24rem;
+}
+
+.services__name {
+    margin-bottom: 1.7rem;
+    
+    font-family: @Lato;
+    font-size: 2.4rem;
+    font-weight: 900;
+    line-height: 1;
+    color: @dark-grey;
+}
+
+.services__text {
+    margin-bottom: 2rem;
+    
+    font-family: @Sans;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: @grey;
+}
+
+.services__link {
+    position: relative;
+    z-index: 20;
+    
+    display: inline-block;
+    
+    font-family: @Sans;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: @blue;
+    
+    text-decoration: none;
+    cursor: pointer;
+    
+    transition: color .2s linear;
+    
+    &:after {
+        content: "";
+        display: block;
+        height: .2rem;
+        width: 10%;
+        margin-top: .3rem;
+        
+        background-color: @blue;
+        
+        transition: background .2s linear, width .2s linear;
+    }
+    
+    &:hover {
+        color: @red;
+        
+        &:after {
+            width: 100%;
+            
+            background-color: @red;
+        }
+    }
+}
+
+.services__title {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    z-index: 10;
+    
+    font-family: @Lato;
+    font-size: 9rem;
+    line-height: 1;
+    color: rgba(@dark-grey, .05);
+}
