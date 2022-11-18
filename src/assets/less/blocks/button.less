@@ -17,11 +17,13 @@
     cursor: pointer;
     
     &:after {
-        content: "Call me back";
+        content: "";
         position: absolute;
         top: 50%;
         left: 50%;
         z-index: 10;
+        
+        width: 100%;
         
         font-family: @Sans;
         font-size: 1.8rem;
@@ -34,6 +36,18 @@
     
     &--long {
         width: 34rem;
+        
+        &:after {
+            content: "Call me back";
+        }
+    }
+    
+    &--med {
+        width: 21.2rem;
+        
+        &:after {
+            content: "Become a client";
+        }
     }
     
     &:hover {
