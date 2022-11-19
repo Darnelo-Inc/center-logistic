@@ -1,0 +1,86 @@
+//main: ../style.less
+
+.mission {
+    position: relative;
+    
+    margin-top: 6rem;
+    margin-bottom: 12rem;
+    
+    text-align: center;
+}
+
+.mission__title {
+    margin-bottom: 19.3rem;
+    
+    font-family: @Lato;
+    font-size: 9rem;
+    font-weight: 900;
+    color: rgba(@black, .05);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.mission__inner {
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    z-index: 1;
+    
+    width: 100%;
+    padding-top: 6.3rem;
+    padding-bottom: 6.3rem;
+    
+    background-color: @white;
+    box-shadow: 0 .5rem 3rem rgba(@black, .16);
+    
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        
+        display: block;
+        width: 41.67%;
+        height: .3rem;
+    }
+    
+    &:before {
+        left: 8.35%;
+        
+        background-color: @blue;
+    }
+    
+    &:after {
+        right: 8.35%;
+        
+        background-color: @red;
+    }
+}
+
+.mission__name {
+    margin-bottom: .3rem;
+    
+    font-family: @Lato;
+    font-size: 3rem;
+    font-weight: 700;
+    color: @blue;
+}
+
+.mission__info {
+    font-family: @Lato;
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: @grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
