@@ -1,0 +1,92 @@
+//main: ../style.less
+
+.policy {
+    margin-bottom: 12rem;
+}
+
+.policy__content {
+    width: 100%;
+    max-width: 89rem;
+    
+    font-family: @Sans;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: @grey;
+    
+    p {
+        margin-bottom: 5rem;
+        
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: @grey;
+        
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    h2, h3, h4, h5, h6 {
+        margin-bottom: 2rem;
+        
+        line-height: 1.13;
+        color: @dark-grey;
+    }
+    
+    h2 {
+        font-size: 2.7rem;
+    }
+    
+    h3 {
+        font-size: 2.4em;
+    }
+    
+    h4 {
+        font-size: 2.1rem;
+    }
+    
+    h5 {
+        font-size: 1.8rem;
+    }
+    
+    h6 {
+        font-size: 1.5rem;
+    }
+    
+    ul, ol {
+        margin-bottom: 4rem;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    ol {
+        list-style: decimal;
+        list-style-position: inside;
+    }
+    
+    hr {
+        display: block;
+        width: 100%;
+        height: .1rem;
+        margin: 4rem 0;
+        
+        border: none;
+        background-color: #d1d1d1;
+    }
+    
+    a {
+        color: @blue;
+        text-decoration: none;
+        
+        &:hover {
+            text-decoration: underline;
+            
+            cursor: pointer;
+        }
+    }
+}
+
