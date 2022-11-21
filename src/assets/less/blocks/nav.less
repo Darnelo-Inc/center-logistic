@@ -3,11 +3,13 @@
 .nav {
     display: flex;
     align-items: center;
-    gap: 4rem;
 }
 
 .nav__link {
     position: relative;
+    
+    display: block;
+    margin-right: 4rem;
     
     font-family: @Lato;
     font-size: 1.5rem;
@@ -38,5 +40,17 @@
             
             transform: scaleX(5);
         }
-    } 
+    }
+    
+    &:last-child {
+        margin-right: 0;
+    }
+    
+    &.active {
+        &:after {
+            opacity: 1;
+            
+            transform: scaleX(5);
+        }
+    }
 }
