@@ -172,8 +172,12 @@ body {
 }
 
 .nav {
-    display: flex;
+    display: none;
     align-items: center;
+}
+
+.nav.active {
+    display: flex;
 }
 
 .nav__link {
@@ -631,11 +635,21 @@ body {
     justify-content: space-between;
 }
 
+.benefits__img {
+    width: 50%;
+}
+
+.benefits__img img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
 .benefits__route {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     max-width: 31.5rem;
     margin-left: 10rem;
 }
@@ -1041,4 +1055,46 @@ body {
 .policy__content a:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.burger {
+    position: relative;
+    display: block;
+    width: 3rem;
+    height: 1.5rem;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+}
+
+.burger:before,
+.burger:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 45%;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: transform 0.2s linear, opacity 0.2s linear;
+}
+
+.burger.active img {
+    display: none;
+}
+
+.burger.active:before,
+.burger.active:after {
+    opacity: 1;
+}
+
+.burger.active:before {
+    transform: rotateZ(45deg);
+}
+
+.burger.active:after {
+    transform: rotateZ(-45deg);
 }

@@ -1,8 +1,12 @@
 //main: ../style.less
 
 .nav {
-    display: flex;
+    display: none;
     align-items: center;
+    
+    &.active {
+        display: flex;
+    }
 }
 
 .nav__link {

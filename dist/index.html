@@ -35,7 +35,7 @@
                     <img class="header__logo" src="assets/img/header/logo.png" alt="logistic">
                 </a>
                 
-                <nav class="nav">
+                <nav class="nav" id="nav">
                     <a href="#" class="nav__link  active" target="_blank">Services</a>
                     <a href="#" class="nav__link" target="_blank">Clients</a>
                     <a href="#" class="nav__link" target="_blank">Benefits</a>
@@ -43,6 +43,10 @@
                     <a href="blog.html" class="nav__link" target="_blank">News</a>
                     <a href="#" class="nav__link" target="_blank">Contact Us</a>
                 </nav>
+                
+                <div class="burger" id="burger">
+                    <img src="assets/img/burger/burger.svg" alt="menu">
+                </div>
             </div>
         </div>
     </header>
@@ -254,8 +258,10 @@
                         </div>
                     </div>
                 </div><!-- /.benefits__route -->
-    
-                <img class="benefits__img" src="assets/img/benefits/truck.jpg" alt="truck">
+                
+                <div class="benefits__img">
+                    <img src="assets/img/benefits/truck.jpg" alt="truck">
+                </div>
             </div><!-- /.benefits__inner -->
         </div><!-- /.container -->
     </div><!-- /.benefits -->
@@ -400,5 +406,7 @@
             </div>
         </div><!-- /.container -->
     </footer><!-- /.footer -->    
+    <!--JS-->
+    <script src="assets/js/burger.js"></script>
 </body>
 </html>
