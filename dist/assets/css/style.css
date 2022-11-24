@@ -130,6 +130,23 @@ body {
     background-color: #ffffff;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
+body.no-scroll:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: auto;
+}
+
 *,
 *:before,
 *:after {
@@ -177,7 +194,31 @@ body {
 }
 
 .nav.active {
+    position: absolute;
+    top: 8.5rem;
+    right: 0;
+    z-index: 10000;
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    background-color: #000000;
+}
+
+.nav.active > .nav__link {
+    width: 100%;
+    padding: 3rem;
+    margin-right: 0;
+    text-align: right;
+    transition: background 0.1s ease-in-out;
+}
+
+.nav.active > .nav__link:after {
+    display: none;
+}
+
+.nav.active > .nav__link:hover {
+    background-color: #004af2;
 }
 
 .nav__link {
@@ -1079,7 +1120,11 @@ body {
     height: 0.2rem;
     background-color: #ffffff;
     opacity: 0;
-    transition: transform 0.2s linear, opacity 0.2s linear;
+    transition: transform 0.1s linear, opacity 0.1s linear;
+}
+
+.burger.active {
+    transition-duration: 0;
 }
 
 .burger.active img {

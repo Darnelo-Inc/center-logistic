@@ -5,7 +5,35 @@
     align-items: center;
     
     &.active {
+        position: absolute;
+        top: @header-height;
+        right: 0;
+        z-index: 10000;
+        
         display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        
+        background-color: @black;
+        
+        & > .nav__link {
+            width: 100%;
+            padding: 3rem;
+            margin-right: 0;
+            
+            text-align: right;
+            
+            transition: background .1s ease-in-out;
+            
+            &:after {
+                display: none;
+            }
+            
+            &:hover {
+                background-color: @blue;
+            }
+        }
     }
 }
 

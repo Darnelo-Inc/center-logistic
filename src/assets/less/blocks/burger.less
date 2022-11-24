@@ -27,11 +27,13 @@
         background-color: @white;
         opacity: 0;
         
-        transition: transform .2s linear, opacity .2s linear;;
+        transition: transform .1s linear, opacity .1s linear;
     }
     
     
     &.active {
+        transition-duration: 0;
+        
         img {
             display: none;
         }
