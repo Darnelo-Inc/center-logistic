@@ -198,7 +198,7 @@
             </div><!-- /.clients__inner -->
             
             <footer class="clients__footer">
-                <button class="btn  btn--med"></button>
+                <button class="btn  btn--med  btn--shadow" type="button"></button>
                 
                 <span class="clients__note">we love our clients</span>
                 <img class="clients__heart" src="assets/img/clients/heart.svg" alt="love">
@@ -210,57 +210,48 @@
     <div class="benefits">
         <div class="container">
             <div class="benefits__inner">
-                <div class="benefits__route">
-                    
-                    <div class="benefits__way">
-                        <img src="assets/img/benefits/pin-start.svg" alt="start">
+                <div class="benefits__col">  
+                    <ul class="benefits__list">
+                        <li class="benefits__item">
+                            <h4 class="benefits__title">Safety</h4>
+                            <div class="benefits__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                                </p>
+                            </div>
+                        </li>
     
-                        <div class="benefits__path">
-                            <img src="assets/img/benefits/way.png" alt="way">
-                        </div>
+                        <li class="benefits__item">
+                            <h4 class="benefits__title">High quality drivers</h4>
+                            <div class="benefits__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                                </p>
+                            </div>
+                        </li>
     
-                        <img src="assets/img/benefits/pin-finish.svg" alt="finish">
-                    </div>   
-                
-                    <div class="benefits__item">
-                        <h4 class="benefits__title">Safety</h4>
-                        <div class="benefits__text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="benefits__item">
-                        <h4 class="benefits__title">High quality drivers</h4>
-                        <div class="benefits__text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="benefits__item">
-                        <h4 class="benefits__title">Guarantee &amp; Support 24/7</h4>
-                        <div class="benefits__text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="benefits__item">
-                        <h4 class="benefits__title">Personal manager</h4>
-                        <div class="benefits__text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
-                            </p>
-                        </div>
-                    </div>
+                        <li class="benefits__item">
+                            <h4 class="benefits__title">Guarantee &amp; Support 24/7</h4>
+                            <div class="benefits__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                                </p>
+                            </div>
+                        </li>
+    
+                        <li class="benefits__item">
+                            <h4 class="benefits__title">Personal manager</h4>
+                            <div class="benefits__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                                </p>
+                            </div>
+                        </li>
+                    </ul><!-- /.benefits__list -->
                 </div><!-- /.benefits__route -->
                 
-                <div class="benefits__img">
-                    <img src="assets/img/benefits/truck.jpg" alt="truck">
+                <div class="benefits__col">
+                    <img class="img" src="assets/img/benefits/truck.jpg" alt="truck">
                 </div>
             </div><!-- /.benefits__inner -->
         </div><!-- /.container -->
@@ -273,7 +264,7 @@
             
             <div class="team__inner">
                 <div class="team__item">
-                    <img class="team__img" src="assets/img/team/John.jpg" alt="john">
+                    <img class="team__img  img" src="assets/img/team/John.jpg" alt="john">
                     
                     <h4 class="team__name">John Smith</h4>
                     <div class="team__prof">Logistic manager - 8 years experience</div>
@@ -292,7 +283,7 @@
                 </div><!-- /.team__item -->
                 
                 <div class="team__item">
-                    <img class="team__img" src="assets/img/team/Daniel.jpg" alt="daniel">
+                    <img class="team__img  img" src="assets/img/team/Daniel.jpg" alt="daniel">
                     
                     <h4 class="team__name">Daniel Kore</h4>
                     <div class="team__prof">Software engineer</div>
@@ -311,7 +302,7 @@
                 </div><!-- /.team__item -->
                 
                 <div class="team__item">
-                    <img class="team__img" src="assets/img/team/Anna.jpg" alt="anna">
+                    <img class="team__img  img" src="assets/img/team/Anna.jpg" alt="anna">
                     
                     <h4 class="team__name">Anna Filler</h4>
                     <div class="team__prof">Marketing specialist - 10 years experience</div>
@@ -342,44 +333,48 @@
                 <h4 class="mission__info">Book your Cargo now &amp; Your job just got a lot easier</h4>
             </div>
             
-            <button class="btn  btn--med"></button>
+            <button class="btn  btn--med  btn--shadow" type="button"></button>
         </div><!-- /.mission -->
     </div><!-- /.container -->
     
     
-    <section class="news">
+    <section class="articles">
         <div class="container">
             <h2 class="section__title"><span>Interesting</span> to read</h2>
             
-            <div class="news__inner">
-                <div class="news__item">
-                    <a href="#" class="news__title" target="_blank">News title</a>
+            <div class="articles__inner">
+                <article class="articles__item">
+                    <h4 class="articles__title">
+                        <a href="#" target="_blank">News title</a>
+                    </h4>
                     
-                    <div class="news__text">
+                    <div class="articles__text">
                         <p>
                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  
                         </p>
                     </div>
                     
-                    <time class="news__date" datetime="2019-03-21">21 March, 2019</time>
-                </div>
+                    <time class="articles__date" datetime="2019-03-21">21 March, 2019</time>
+                </article>
                 
-                <div class="news__item">
-                    <a href="#" class="news__title" target="_blank">News title</a>
+                <article class="articles__item">
+                    <h4 class="articles__title">
+                        <a href="#" target="_blank">News title</a>
+                    </h4>
                     
-                    <div class="news__text">
+                    <div class="articles__text">
                         <p>
                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  
                         </p>
                     </div>
                     
-                    <time class="news__date" datetime="2019-03-21">21 March, 2019</time>
-                </div>
-            </div><!-- /.news__inner -->
+                    <time class="articles__date" datetime="2019-03-21">21 March, 2019</time>
+                </article>
+            </div><!-- /.articles__inner -->
             
-            <a href="blog.html" class="btn btn--news"></a>
+            <a href="blog.html" class="btn btn--articles  btn--shadow"></a>
         </div><!-- /.container -->
-    </section><!-- /.news -->
+    </section><!-- /.articles -->
     
     
     
@@ -399,11 +394,11 @@
                 <a href="mailto:hello@centerlogistic.com" target="_blank">E-mail: hello@centerlogistic.com</a>
             </div>
             
-            <div class="footer__info">
+            <nav class="footer__info">
                 <a href="#" class="footer__link" target="_blank">Terms &amp; Contidions</a>
                 <a href="policy.html" class="footer__link" target="_blank">Privacy Policy</a>
                 <a href="blog.html" class="footer__link" target="_blank">Our blog</a>
-            </div>
+            </nav>
         </div><!-- /.container -->
     </footer><!-- /.footer -->    
     <!--JS-->

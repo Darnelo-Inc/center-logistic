@@ -6,34 +6,56 @@
 
 .benefits__inner {
     display: flex;
-    justify-content: space-between;
 }
 
-
-.benefits__img {
+.benefits__col {
     width: 50%;
+}
+
+.benefits__list {
+    position: relative;
     
-    img {
+    width: 100%;
+    max-width: 37rem;
+    padding-left: 5rem;
+    
+    background-image: linear-gradient(to bottom, @white 45%, #a5a5a5 45%);
+    background-size: .15rem 3.5rem;
+    background-repeat: repeat-y;
+    background-position: left 1.19rem top 2rem;
+    
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        
         display: block;
-        height: auto;
-        width: 100%;
+        width: 2.6rem;
+        height: 3.6rem;
+        
+        background-color: @white;
+        background-repeat: no-repeat;
+    }
+    
+    &:before {
+        top: -1rem;
+        
+        background-image: url("../img/benefits/pin-start.svg");
+    }
+    
+    &:after {
+        bottom: -1rem;
+        
+        background-image: url("../img/benefits/pin-finish.svg");
     }
 }
 
-.benefits__route {
-    position: relative;
-    
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    max-width: 31.5rem;
-    margin-left: 10rem;
-}
-
 .benefits__item {
-    width: 100%;
-    max-width: 31.5rem;
     margin-bottom: 3.5rem;
+    
+    list-style: none;
     
     &:last-child {
         margin-bottom: 0;
@@ -41,7 +63,7 @@
 }
 
 .benefits__title {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     
     font-family: @Lato;
     font-size: 2.1rem;
