@@ -81,12 +81,12 @@ function html() {
 
 
 function css() {
-    return src(path.src.css, {base: "src/assets/less"})
+    return src(path.src.css, {base: "src/assets/less/"})
         .pipe(plumber())
         .pipe(less())
         .pipe(autoprefixer({
             Browserslist: ['last 8 versions'],
-            cascade: false
+            cascade: true
         }))
         .pipe(cssbeautify())
         .pipe(dest(path.build.css))
@@ -110,7 +110,7 @@ function js() {
     return src(path.src.js, {base: './src/assets/js/'})
         .pipe(plumber())
         .pipe(rigger())
-        .pipe(gulp.dest(path.build.js))
+        .pipe(dest(path.build.js))
         .pipe(uglify())
         .pipe(rename({
             suffix: ".min",
@@ -123,9 +123,9 @@ function js() {
 
 function images() {
     return src(path.src.images)
-        .pipe(imagemin())
-        .pipe(dest(path.build.images))
-	.pipe(browsersync.stream())
+        //.pipe(imagemin())
+        .pipe(gulp.dest(path.build.images))
+        .pipe(browsersync.stream())
 }
 
 
@@ -144,6 +144,7 @@ function watchFiles() {
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, images))
 const watch = gulp.parallel(build, watchFiles, browserSync)
+
 
 
 /* Exports Tasks */

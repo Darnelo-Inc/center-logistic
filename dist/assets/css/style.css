@@ -507,6 +507,18 @@ body.no-scroll:before {
     background-color: #ffffff;
 }
 
+.form__control--dark {
+    text-shadow: none;
+}
+
+.form__control--dark::-moz-placeholder {
+    color: #000000;
+}
+
+.form__control--dark::placeholder {
+    color: #000000;
+}
+
 .services {
     margin-top: 9rem;
 }
@@ -1173,4 +1185,47 @@ body.no-scroll:before {
 
 .burger.active:after {
     transform: rotateZ(-45deg);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal__inner {
+    width: 100%;
+    max-width: 40rem;
+    padding: 2.5rem;
+    background-color: #ffffff;
+}
+
+.modal__header {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.modal__title {
+    margin-bottom: 0.5rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 900;
+    line-height: 1.13;
+    color: #004af2;
+}
+
+.modal__text {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #2c2c2c;
 }
