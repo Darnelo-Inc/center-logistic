@@ -7,30 +7,48 @@
             </div>
         </div>
         
-        <form action="/" method="get" action="/">
-            <div class="form__group">
+        <form class="form" action="/" method="get" action="/">
+            <div class="form__group  form__group--modal">
                 <label for="name">
-                    <img class="form__icon" src="assets/img/callback/name.svg" alt="name">
+                    <img class="form__icon " src="assets/img/callback/name-black.svg" alt="name">
                 </label>
                 <input class="form__control  form__control--dark" type="text" id="name" placeholder="Your name">
                 <span class="form__line"></span>
             </div>
 
-            <div class="form__group">
+            <div class="form__group  form__group--modal">
                 <label for="tel">
-                    <img class="form__icon" src="assets/img/callback/tel.svg" alt="tel">
+                    <img class="form__icon" src="assets/img/callback/tel-black.svg" alt="tel">
                 </label>
                 <input class="form__control  form__control--dark" type="tel" id="tel" placeholder="Your phone">
                 <span class="form__line"></span>
             </div>
 
-            <div class="form__group">
+            <div class="form__group  form__group--modal">
                 <label for="email">
-                    <img class="form__icon" src="assets/img/callback/email.svg" alt="email">
+                    <img class="form__icon" src="assets/img/callback/email-black.svg" alt="email">
                 </label>
                 <input class="form__control  form__control--dark" type="email" id="email" placeholder="Your e-mail">
                 <span class="form__line"></span>
             </div>
         </form>
+
+        <button class="btn  btn--long" type="submit">Call me back</button>
+
+        <div class="modal__footer">
+            <h4 class="modal__footer-title">Our contacts</h4>
+            
+            <div class="modal__footer-contacts">
+                <address class="modal__address">
+                    New York, Street, ZIP code
+                </address>
+                <a class="address__link" href="tel:+9948373123">Phone: +9948373123</a>
+                <a class="address__link" href="mailto:hello@centerlogistic.com">E-mail: hello@centerlogistic.com</a>
+            </div>
+        </div>
+
+        <button class="modal__close" type="button">
+            <img src="assets/img/modal/close.svg" alt="close">
+        </button>
     </div>
 </div>

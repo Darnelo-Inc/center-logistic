@@ -7,6 +7,14 @@
     align-items: center;
     height: 3.3rem;
     margin-bottom: 2rem;
+
+    &--modal {
+        border-bottom: 1px solid #e8e8e8;
+
+        &:last-child {
+            margin-bottom: 2.7rem;
+        }
+    }
 }
 
 .form__icon {
@@ -24,7 +32,6 @@
     width: 100%;
     
     background-color: rgba(@white, .25);
-    box-shadow: 0 4px 4px rgba(@black, .25);
     
     transition: background .15s linear;
 }
@@ -58,13 +65,21 @@
     }
 
     &--dark {
+        color: @dark-grey;
         text-shadow: none;
         
         &::placeholder {
-            color: @black;
+            color: @dark-grey;
         }
+
+        &:focus + .form__line {
+            background-color: rgba(@black, 3);
+        }
+        
     }
 }
+
+
 
 
 

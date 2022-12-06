@@ -457,6 +457,14 @@ body.no-scroll:before {
     margin-bottom: 2rem;
 }
 
+.form__group--modal {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.form__group--modal:last-child {
+    margin-bottom: 2.7rem;
+}
+
 .form__icon {
     padding: 1rem;
 }
@@ -470,7 +478,6 @@ body.no-scroll:before {
     height: 0.1rem;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     transition: background 0.15s linear;
 }
 
@@ -508,15 +515,20 @@ body.no-scroll:before {
 }
 
 .form__control--dark {
+    color: #2c2c2c;
     text-shadow: none;
 }
 
 .form__control--dark::-moz-placeholder {
-    color: #000000;
+    color: #2c2c2c;
 }
 
 .form__control--dark::placeholder {
-    color: #000000;
+    color: #2c2c2c;
+}
+
+.form__control--dark:focus + .form__line {
+    background-color: #000000;
 }
 
 .services {
@@ -1202,6 +1214,7 @@ body.no-scroll:before {
 }
 
 .modal__inner {
+    position: relative;
     width: 100%;
     max-width: 40rem;
     padding: 2.5rem;
@@ -1228,4 +1241,67 @@ body.no-scroll:before {
     font-weight: 400;
     line-height: 1.8;
     color: #2c2c2c;
+}
+
+.modal__footer {
+    margin-top: 2rem;
+    text-align: center;
+    border-top: 1px solid #e8e8e8;
+}
+
+.modal__footer-title {
+    margin-top: 1.5rem;
+    margin-bottom: 0.7rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.modal__footer-contacts {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #2c2c2c;
+}
+
+.modal__address {
+    font-style: normal;
+}
+
+.address__link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.address__link:hover {
+    text-decoration: underline;
+}
+
+.modal__close {
+    position: absolute;
+    top: -2rem;
+    right: -3rem;
+    z-index: inherit;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border: none;
+    background: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.modal__close img {
+    display: block;
+}
+
+.modal__close:hover {
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.modal__close:focus {
+    outline: none;
 }
