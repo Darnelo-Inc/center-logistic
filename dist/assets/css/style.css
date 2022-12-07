@@ -1204,13 +1204,17 @@ body.no-scroll:before {
     top: 0;
     left: 0;
     z-index: 2000;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal.show {
+    display: flex;
 }
 
 .modal__inner {
@@ -1221,13 +1225,20 @@ body.no-scroll:before {
     background-color: #ffffff;
 }
 
+.modal__icon {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.6rem;
+}
+
 .modal__header {
     margin-bottom: 2.5rem;
     text-align: center;
 }
 
 .modal__title {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     font-family: 'Lato', sans-serif;
     font-size: 2.4rem;
     font-weight: 900;
