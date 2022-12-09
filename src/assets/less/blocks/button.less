@@ -41,6 +41,10 @@
         &:after {
             content: "Call me back";
         }
+
+        @media @laptop-1 {
+            width: 29rem;
+        }
     }
     
     &--med {
@@ -69,6 +73,30 @@
     
     &--shadow {
         box-shadow: 0 1rem 1.5rem rgba(@black, .2);
+    }
+
+    &--request {
+        display: none;
+        
+        &:after {
+            content: "Get callback";
+        }
+
+        @media @laptop-2 {
+            position: absolute;
+            left: 5rem;
+            bottom: 5rem;
+            z-index: 10;
+
+            display: inline-block;
+            width: 28rem;
+            height: 5rem;
+        }
+
+        @media @tablet-1 {
+            width: 25rem;
+            height: 4.5rem;
+        }
     }
     
     &:hover {

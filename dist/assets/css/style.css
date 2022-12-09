@@ -190,6 +190,18 @@ body.no-scroll:before {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media (max-width: 900px) {
+    .header {
+        height: calc(8.5rem - 2rem);
+    }
+}
+
+@media (max-width: 770px) {
+    .header {
+        height: calc(8.5rem - 2.5rem);
+    }
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -204,7 +216,7 @@ body.no-scroll:before {
 }
 
 .nav {
-    display: none;
+    display: flex;
     align-items: center;
 }
 
@@ -224,6 +236,7 @@ body.no-scroll:before {
     width: 100%;
     padding: 3rem;
     margin-right: 0;
+    font-size: 2rem;
     text-align: right;
     transition: background 0.1s ease-in-out;
 }
@@ -234,6 +247,24 @@ body.no-scroll:before {
 
 .nav.active > .nav__link:hover {
     background-color: #004af2;
+}
+
+@media (max-width: 900px) {
+    .nav.active {
+        top: calc(8.5rem - 2rem);
+    }
+}
+
+@media (max-width: 770px) {
+    .nav.active {
+        top: calc(8.5rem - 2.5rem);
+    }
+}
+
+@media (max-width: 770px) {
+    .nav {
+        display: none;
+    }
 }
 
 .nav__link {
@@ -330,6 +361,24 @@ body.no-scroll:before {
     line-height: 0.91;
 }
 
+@media (max-width: 1050px) {
+    .intro__title {
+        font-size: 9rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .intro__title {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .intro__title {
+        font-size: 7rem;
+    }
+}
+
 .callback {
     position: absolute;
     left: 5rem;
@@ -347,6 +396,18 @@ body.no-scroll:before {
 
 .callback--blog {
     position: static;
+}
+
+@media (max-width: 1050px) {
+    .callback {
+        max-width: 35rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .callback {
+        display: none;
+    }
 }
 
 .callback__header {
@@ -417,6 +478,12 @@ body.no-scroll:before {
     content: "Call me back";
 }
 
+@media (max-width: 1050px) {
+    .btn--long {
+        width: 29rem;
+    }
+}
+
 .btn--med {
     width: 21.2rem;
 }
@@ -445,8 +512,39 @@ body.no-scroll:before {
     box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
 }
 
+.btn--request {
+    display: none;
+}
+
+.btn--request:after {
+    content: "Get callback";
+}
+
+@media (max-width: 900px) {
+    .btn--request {
+        position: absolute;
+        left: 5rem;
+        bottom: 5rem;
+        z-index: 10;
+        display: inline-block;
+        width: 28rem;
+        height: 5rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .btn--request {
+        width: 25rem;
+        height: 4.5rem;
+    }
+}
+
 .btn:hover:after {
     letter-spacing: 0.1rem;
+}
+
+.form {
+    width: 100%;
 }
 
 .form__group {
@@ -545,7 +643,7 @@ body.no-scroll:before {
 }
 
 .services__item {
-    width: 25%;
+    width: 24%;
     max-width: 24rem;
     margin-bottom: 4rem;
 }
@@ -1155,7 +1253,7 @@ body.no-scroll:before {
 
 .burger {
     position: relative;
-    display: block;
+    display: none;
     width: 3rem;
     height: 1.5rem;
     font-size: 0;
@@ -1179,6 +1277,7 @@ body.no-scroll:before {
 }
 
 .burger.active {
+    display: block;
     transition-duration: 0;
 }
 
@@ -1197,6 +1296,12 @@ body.no-scroll:before {
 
 .burger.active:after {
     transform: rotateZ(-45deg);
+}
+
+@media (max-width: 770px) {
+    .burger {
+        display: block;
+    }
 }
 
 .modal {

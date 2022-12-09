@@ -3,7 +3,7 @@
 .burger {
     position: relative;
     
-    display: block;
+    display: none;
     width: 3rem;
     height: 1.5rem;
     
@@ -32,6 +32,7 @@
     
     
     &.active {
+        display: block;
         transition-duration: 0;
         
         img {
@@ -50,5 +51,9 @@
         &:after {
             transform: rotateZ(-45deg);
         }
+    }
+
+    @media @tablet-1 {
+        display: block;
     }
 }
