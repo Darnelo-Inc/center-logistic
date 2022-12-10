@@ -202,6 +202,12 @@ body.no-scroll:before {
     }
 }
 
+@media (max-width: 650px) {
+    .header {
+        height: calc(8.5rem - 3rem);
+    }
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -258,6 +264,12 @@ body.no-scroll:before {
 @media (max-width: 770px) {
     .nav.active {
         top: calc(8.5rem - 2.5rem);
+    }
+}
+
+@media (max-width: 650px) {
+    .nav.active {
+        top: calc(8.5rem - 3rem);
     }
 }
 
@@ -330,6 +342,24 @@ body.no-scroll:before {
     background-size: cover;
 }
 
+@media (max-width: 770px) {
+    .intro {
+        min-height: 30rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .intro {
+        min-height: 25rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .intro {
+        min-height: 21rem;
+    }
+}
+
 .intro__inner {
     position: absolute;
     right: 5rem;
@@ -337,6 +367,13 @@ body.no-scroll:before {
     z-index: 10;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 650px) {
+    .intro__inner {
+        right: 7rem;
+        bottom: 2rem;
+    }
 }
 
 .intro__place,
@@ -352,6 +389,18 @@ body.no-scroll:before {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.4;
+}
+
+@media (max-width: 650px) {
+    .intro__place {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .intro__place {
+        font-size: 1rem;
+    }
 }
 
 .intro__title {
@@ -379,9 +428,21 @@ body.no-scroll:before {
     }
 }
 
+@media (max-width: 650px) {
+    .intro__title {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .intro__title {
+        font-size: 3rem;
+    }
+}
+
 .callback {
     position: absolute;
-    left: 5rem;
+    left: 3rem;
     bottom: -3rem;
     z-index: 10;
     display: flex;
@@ -534,8 +595,14 @@ body.no-scroll:before {
 
 @media (max-width: 770px) {
     .btn--request {
-        width: 25rem;
+        width: 21rem;
         height: 4.5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .btn--request {
+        display: none;
     }
 }
 
@@ -633,6 +700,30 @@ body.no-scroll:before {
     margin-top: 9rem;
 }
 
+@media (max-width: 1050px) {
+    .services {
+        margin-top: 7rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .services {
+        margin-top: 6rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .services {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .services {
+        margin-top: 3rem;
+    }
+}
+
 .services__inner {
     position: relative;
     display: flex;
@@ -642,10 +733,39 @@ body.no-scroll:before {
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 770px) {
+    .services__inner {
+        padding: 2.3rem 4rem 7.6rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .services__inner {
+        padding: 2rem 2.5rem 7rem;
+    }
+}
+
 .services__item {
-    width: 24%;
+    width: 23%;
     max-width: 24rem;
     margin-bottom: 4rem;
+}
+
+.services__item:last-of-type {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+    .services__item {
+        width: 46%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .services__item {
+        width: 100%;
+    }
 }
 
 .services__name {
@@ -657,6 +777,24 @@ body.no-scroll:before {
     color: #2c2c2c;
 }
 
+@media (max-width: 1050px) {
+    .services__name {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .services__name {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .services__name {
+        font-size: 1.7rem;
+    }
+}
+
 .services__text {
     margin-bottom: 2rem;
     font-family: 'PT Sans', sans-serif;
@@ -664,6 +802,24 @@ body.no-scroll:before {
     font-weight: 400;
     line-height: 1.4;
     color: #585858;
+}
+
+@media (max-width: 1050px) {
+    .services__text {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .services__text {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .services__text {
+        font-size: 1.2rem;
+    }
 }
 
 .services__link {
@@ -699,6 +855,18 @@ body.no-scroll:before {
     background-color: #ff3e2f;
 }
 
+@media (max-width: 1050px) {
+    .services__link {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .services__link {
+        font-size: 1.3rem;
+    }
+}
+
 .services__title {
     position: absolute;
     bottom: 1rem;
@@ -710,13 +878,60 @@ body.no-scroll:before {
     color: rgba(44, 44, 44, 0.05);
 }
 
+@media (max-width: 900px) {
+    .services__title {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .services__title {
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .services__title {
+        font-size: 5.6rem;
+    }
+}
+
 .clients {
     margin-top: 12rem;
     margin-bottom: 12rem;
 }
 
+@media (max-width: 1050px) {
+    .clients {
+        margin-top: 11rem;
+        margin-bottom: 11rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .clients {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .clients {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .clients {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+}
+
 .clients__inner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 10rem;
 }
@@ -730,8 +945,15 @@ body.no-scroll:before {
 }
 
 .clients__logos img {
+    display: block;
     margin-bottom: 6rem;
     margin-right: 6rem;
+}
+
+@media (max-width: 770px) {
+    .clients__logos {
+        width: 100%;
+    }
 }
 
 .clients__bg {
@@ -906,6 +1128,41 @@ body.no-scroll:before {
 
 .section__title span {
     color: #004af2;
+}
+
+@media (max-width: 1050px) {
+    .section__title {
+        margin-bottom: 5.2rem;
+        font-size: 4.2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .section__title {
+        margin-bottom: 5rem;
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .section__title {
+        margin-bottom: 4.8rem;
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .section__title {
+        margin-bottom: 4.5rem;
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .section__title {
+        margin-bottom: 4.2rem;
+        font-size: 3.2rem;
+    }
 }
 
 .team {

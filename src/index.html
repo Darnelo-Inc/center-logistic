@@ -110,7 +110,8 @@ title: Center Logistic
         <h2 class="section__title"><span>Our</span> Clients</h2>
        
         <div class="clients__inner">
-            <div class="clients__logos">
+            
+            <div class="clients__logos  slider__logo" id="logos">
                 <img src="assets/img/clients/atica.png" alt="atica">
                 <img src="assets/img/clients/hex-lab.png" alt="hex-lab">
                 <img src="assets/img/clients/amara.png" alt="amara">
@@ -119,10 +120,10 @@ title: Center Logistic
                 <img src="assets/img/clients/hexa.png" alt="hexa">
                 <img src="assets/img/clients/utosia.png" alt="utosia">
                 <img src="assets/img/clients/hex-lab.png" alt="hex-lab">
+            </div><!-- /.clients__logos -->    
                 
-                <img class="clients__bg" src="assets/img/clients/map.png" alt="map">
-            </div><!-- /.clients__logos -->
-            
+            <img class="clients__bg" src="assets/img/clients/map.png" alt="map">
+
             <div class="reviews">
                 <header class="reviews__header">
                     <div class="reviews__img">
@@ -324,7 +325,19 @@ title: Center Logistic
     </div><!-- /.container -->
 </section><!-- /.articles -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<script type="text/javascript">
+    $('.slider__logo').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 500,
+    arrows: false,
+    dots: false,
+    });
+</script>
 
 
 

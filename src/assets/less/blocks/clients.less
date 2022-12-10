@@ -3,10 +3,31 @@
 .clients {
     margin-top: 12rem;
     margin-bottom: 12rem;
+
+    @media @laptop-1 {
+        margin-top: 11rem;
+        margin-bottom: 11rem;
+    }
+
+    @media @laptop-2 {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    @media @tablet-1 {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+
+    @media @tablet-2 {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
 }
 
 .clients__inner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 10rem;
 }
@@ -20,8 +41,13 @@
     width: 60%;
     
     img {
+        display: block;
         margin-bottom: 6rem;
         margin-right: 6rem;
+    }
+
+    @media @tablet-1 {
+        width: 100%;
     }
 }
 
