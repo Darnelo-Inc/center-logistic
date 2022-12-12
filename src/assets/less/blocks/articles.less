@@ -1,7 +1,23 @@
 //main: ../style.less
 
 .articles {
-    margin-bottom: 12rem;
+    margin-bottom: 10rem;
+
+    @media @tablet-1 {
+        margin-bottom: 7rem;
+    }
+
+    @media @tablet-2 {
+        margin-bottom: 6rem;
+    }
+
+    @media @mobile {
+        margin-bottom: 5rem;
+
+        a {
+            text-align: center;
+        }
+    }
 }
 
 .articles__inner {
@@ -11,7 +27,7 @@
 }
 
 .articles__item {
-    width: 50%;
+    width: 47%;
     max-width: 50rem;
     margin-bottom: 5rem;
     
@@ -20,6 +36,17 @@
     &--blog {
         width: 100%;
         max-width: none;
+    }
+
+    @media @tablet-1 {
+        width: 100%;
+        max-width: none;
+    }
+
+    @media @mobile {
+        &:last-child {
+            margin-bottom: 3rem;
+        }
     }
 }
 
@@ -43,6 +70,10 @@
             text-decoration: underline;
         }
     }
+
+    @media @tablet-2 {
+        font-size: 1.6rem;
+    }
 }
 
 .articles__text {
@@ -52,6 +83,10 @@
     font-weight: 400;
     line-height: 1.4;
     color: @grey;
+
+    @media @tablet-2 {
+        font-size: 1.4rem;
+    }
 }
 
 .articles__date {

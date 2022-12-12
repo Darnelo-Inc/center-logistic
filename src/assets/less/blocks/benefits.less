@@ -9,7 +9,18 @@
 }
 
 .benefits__col {
+    display: flex;
+    align-items: center;
     width: 50%;
+
+    @media @tablet-1 {
+        justify-content: center;
+        width: 100%;
+
+        &--img {
+            display: none;
+        }
+    }
 }
 
 .benefits__list {
@@ -50,6 +61,10 @@
         
         background-image: url("../img/benefits/pin-finish.svg");
     }
+
+    @media @tablet-1 {
+        max-width: none;
+    }
 }
 
 .benefits__item {
@@ -60,6 +75,10 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    @media @laptop-2 {
+        margin-bottom: 2.8rem;
+    }
 }
 
 .benefits__title {
@@ -69,6 +88,18 @@
     font-size: 2.1rem;
     font-weight: 900;
     color: @dark-grey;
+
+    @media @tablet-1 {
+        font-size: 2rem;
+    }
+
+    @media @tablet-2 {
+        font-size: 1.85rem;
+    }
+
+    @media @mobile {
+        font-size: 1.8rem;
+    }
 }
 
 .benefits__text {
@@ -77,6 +108,10 @@
     font-weight: 400;
     line-height: 1.4;
     color: @grey;
+
+    @media @laptop-2 {
+        font-size: 1.4rem;
+    }
 }
 
 .benefits__way {

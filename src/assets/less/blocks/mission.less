@@ -7,6 +7,11 @@
     margin-bottom: 12rem;
     
     text-align: center;
+
+    @media @laptop-1 {
+        margin-top: 3rem;
+        margin-bottom: 8rem;
+    }
 }
 
 .mission__title {
@@ -18,6 +23,26 @@
     color: rgba(@black, .05);
     text-transform: uppercase;
     text-align: center;
+
+    @media @laptop-1 {
+        margin-bottom: 22rem;
+
+        font-size: 8rem;
+    }
+
+    @media @laptop-2 {
+        margin-bottom: 15rem;
+
+        font-size: 7rem;
+    }
+
+    @media @tablet-1 {
+        font-size: 6rem;
+    }
+
+    @media @mobile {
+        font-size: 4rem;
+    }
 }
 
 .mission__inner {
@@ -55,6 +80,32 @@
         
         background-color: @red;
     }
+
+    @media @laptop-1 {
+        top: 8rem;
+
+        padding-top: 5.3rem;
+        padding-bottom: 5.3rem;
+    }
+
+    @media @laptop-2 {
+        top: 6.8rem;
+
+        padding-top: 4.3rem;
+        padding-bottom: 4.3rem;
+    }
+
+    @media @tablet-1 {
+        top: 6rem;
+
+        padding: 3rem .5rem;
+    }
+
+    @media @mobile {
+        top: 4.3rem;
+
+        padding: 1.3rem 1rem;
+    }
 }
 
 .mission__name {
@@ -64,6 +115,19 @@
     font-size: 3rem;
     font-weight: 700;
     color: @blue;
+
+    @media @laptop-2 {
+        font-size: 2.3rem;
+    }
+
+    @media @tablet-1 {
+        font-size: 2.1rem;
+    }
+
+    @media @mobile {
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
 }
 
 .mission__info {
@@ -71,6 +135,18 @@
     font-size: 2.1rem;
     font-weight: 400;
     color: @grey;
+
+    @media @laptop-2 {
+        font-size: 1.8rem;
+    }
+
+    @media @tablet-1 {
+        font-size: 1.7rem;
+    }
+
+    @media @mobile {
+        font-size: 1.4rem;
+    }
 }
 
 

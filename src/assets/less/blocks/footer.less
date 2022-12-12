@@ -12,6 +12,15 @@
     
     background: #f9f9f9 url("../img/footer/bg.jpg") left bottom no-repeat;
     background-size: cover;
+
+    @media @laptop-2 {
+        height: auto;
+        padding: 2rem 0;
+
+        font-size: 1.45rem;
+
+        background: #f9f9f9;
+    }
 }
 
 .footer__logo {
@@ -24,14 +33,15 @@
     margin-bottom: 1rem;
     
     font-family: inherit;
+    font-size: inherit;
     color: @grey;
     text-decoration: none;
     
     cursor: pointer;
     
     &:hover {
-            text-decoration: underline;
-        }
+        text-decoration: underline;
+    }
 }
 
 .footer__contacts {
@@ -62,12 +72,21 @@
     cursor: pointer;
     
     & + & {
-        margin-left: 3rem;
+        margin-left: 2rem;
     }
     
     &:hover {
-            text-decoration: underline;
+        text-decoration: underline;
+    }
+
+    @media @mobile {
+        display: block; 
+        
+        & + & {
+            margin-left: 0;
+            margin-top: .7rem;
         }
+    }
 }
 
 

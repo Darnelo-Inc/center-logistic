@@ -102,6 +102,15 @@
             display: none;
         }
     }
+
+    &--center {
+        @media @mobile {
+            position: relative;
+            left: 50%;
+
+            transform: translateX(-50%);
+        }
+    }
     
     &:hover {
         &:after {

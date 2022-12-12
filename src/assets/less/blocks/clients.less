@@ -10,17 +10,17 @@
     }
 
     @media @laptop-2 {
-        margin-top: 10rem;
+        margin-top: 9rem;
         margin-bottom: 10rem;
     }
 
     @media @tablet-1 {
-        margin-top: 8rem;
+        margin-top: 7rem;
         margin-bottom: 8rem;
     }
 
     @media @tablet-2 {
-        margin-top: 6rem;
+        margin-top: 5rem;
         margin-bottom: 6rem;
     }
 }
@@ -29,7 +29,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
+
+    @media @laptop-1 {
+        margin-bottom: 2rem;
+    }
+
+    @media @laptop-2 {
+        margin-bottom: 0;
+    }
+
+    @media @tablet-1 {
+        margin-bottom: 2.3rem;
+    }
+
+    @media @tablet-2 {
+        margin-bottom: 1.8rem;
+    }
 }
 
 .clients__logos {
@@ -37,17 +53,23 @@
     
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     width: 60%;
-    
-    img {
-        display: block;
-        margin-bottom: 6rem;
-        margin-right: 6rem;
-    }
 
     @media @tablet-1 {
         width: 100%;
+        margin-bottom: 5rem;
+    }
+}
+
+.clients__logo {
+    //display: block;
+    margin-right: 4rem;
+    margin-bottom: 6rem;
+
+    @media @tablet-1 {
+        margin: 1.5rem 1rem;
     }
 }
 
@@ -58,10 +80,18 @@
     z-index: -1;
     
     opacity: .15;
+
+    @media @laptop-2 {
+        display: none;
+    }
 }
 
 .clients__footer {
     position: relative;
+
+    @media @mobile {
+        text-align: center;
+    }
 }
 
 .clients__note {
@@ -74,6 +104,14 @@
     font-size: 1.8rem;
     font-weight: 400;
     color: #464646;
+
+    @media @tablet-1 {
+        font-size: 1.6rem;
+    }
+
+    @media @mobile {
+        display: none;
+    }
 }
 
 .clients__heart {
@@ -83,10 +121,8 @@
     z-index: 1;
     
     transform: translateY(-50%);
+
+    @media @mobile {
+        display: none;
+    }
 }
-
-
-
-
-
-
