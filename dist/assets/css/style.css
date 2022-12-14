@@ -244,7 +244,7 @@ body.no-scroll:before {
     margin-right: 0;
     font-size: 2rem;
     text-align: right;
-    transition: background 0.1s ease-in-out;
+    transition: background 0.2s linear;
 }
 
 .nav.active > .nav__link:after {
@@ -253,6 +253,13 @@ body.no-scroll:before {
 
 .nav.active > .nav__link:hover {
     background-color: #004af2;
+}
+
+@media (max-width: 575px) {
+    .nav.active > .nav__link {
+        padding: 2.5rem;
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1834,6 +1841,36 @@ body.no-scroll:before {
     margin-bottom: 12rem;
 }
 
+@media (max-width: 1050px) {
+    .policy {
+        margin-bottom: 10rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .policy {
+        margin-bottom: 8rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .policy {
+        margin-bottom: 6rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .policy {
+        margin-bottom: 4.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .policy {
+        margin-bottom: 3rem;
+    }
+}
+
 .policy__content {
     width: 100%;
     max-width: 89rem;
@@ -1849,6 +1886,12 @@ body.no-scroll:before {
     font-weight: 400;
     line-height: 1.5;
     color: #585858;
+}
+
+@media (max-width: 770px) {
+    .policy__content p {
+        font-size: 1.5rem;
+    }
 }
 
 .policy__content p img {
@@ -1871,20 +1914,50 @@ body.no-scroll:before {
     font-size: 2.7rem;
 }
 
+@media (max-width: 650px) {
+    .policy__content h2 {
+        font-size: 2.5rem;
+    }
+}
+
 .policy__content h3 {
     font-size: 2.4em;
+}
+
+@media (max-width: 650px) {
+    .policy__content h3 {
+        font-size: 2.2rem;
+    }
 }
 
 .policy__content h4 {
     font-size: 2.1rem;
 }
 
+@media (max-width: 650px) {
+    .policy__content h4 {
+        font-size: 2rem;
+    }
+}
+
 .policy__content h5 {
     font-size: 1.8rem;
 }
 
+@media (max-width: 650px) {
+    .policy__content h5 {
+        font-size: 1.7rem;
+    }
+}
+
 .policy__content h6 {
     font-size: 1.5rem;
+}
+
+@media (max-width: 650px) {
+    .policy__content h6 {
+        font-size: 1.45rem;
+    }
 }
 
 .policy__content ul,
@@ -1899,6 +1972,12 @@ body.no-scroll:before {
 .policy__content ol {
     list-style: decimal;
     list-style-position: inside;
+}
+
+@media (max-width: 770px) {
+    .policy__content li {
+        font-size: 1.5rem;
+    }
 }
 
 .policy__content hr {
