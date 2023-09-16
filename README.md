@@ -1,6 +1,6 @@
 # center-logistic
 
-[Adaptive multipage website](https://darnelo-inc.github.io/center-logistic/)
+[Adaptive multi-page website](https://darnelo-inc.github.io/center-logistic/)
 
 HTML /
 Less /
